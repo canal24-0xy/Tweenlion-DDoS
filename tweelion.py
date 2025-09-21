@@ -6,22 +6,10 @@ import random
 import re
 import argparse
 import fade
-from colorama import Fore, Style, init
 
-#inisialisasi colorama
-init(autoreset=True)
-
-class ColorfulLoadTester:
-	def __init__(self):
-		self.results = []
-		self.running = True
-
-    def print_banner(self)
-        banner = """
-
-════════════════════════════════════════════════════════════════════ \033[0m
-        """
-		print(Fore.CYAN + Style.BRIGHT + banner)
+os.system( 'clear' )
+logo = """
+\033[31m════════════════════════════════════════════════════════════════════════════════\033[0m
 
 host=''
 headers_useragents=[]
