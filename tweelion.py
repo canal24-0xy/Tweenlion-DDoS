@@ -74,11 +74,10 @@ def initHeaders():
 
 def handleStatusCodes(status_code):
 	global request_counter
-	sys.stdout.write("\r%i \033[92mATTACK REQUEST SENT\033[0m" % request_counter)
+	sys.stdout.write("\r%i \033[1;32mREQUEST SENT\033[0m" % request_counter)
 	sys.stdout.flush()
-	print("\033[34m▒▒["▒▒+str(url)+▒▒"] \033[33m▒▒B A S E▒▒-▒▒L7▒▒\033[0m")
+	print("\033[1;33m▒▒\033[1;36[" +str(url)+ "]\033[1;33m▒\033[1;37m▒\033[0;31m::\033[0;33mTween\033[1;36mLeon\033[0m")
 	sys.stdout.flush()
-	print("\033[95m▒▒ ▒▒ ▒▒\033[36m▒▒ ▒▒ ▒▒\033[35m▒▒ ▒▒ ▒▒\033[0m")
 	if status_code == 429:
 			printMsg("You have been throttled")
 	if status_code == 500:
