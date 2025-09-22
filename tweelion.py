@@ -9,7 +9,7 @@ import fade
 
 os.system( 'clear' )
 logo = """
-\033[0;30m════════════════════════════════════════════════════════════════════════════════\033[0m
+\033[0;30m═════════════════════════════════════════════════════════════════════\033[0m
 
 
  
@@ -19,9 +19,9 @@ logo = """
     \||  ||  ||  || ||   | ||   | ||    |  ||    || ||    | ||     |
      ||  ||  ||  || ||___| ||___| ||    |  ||    || ||    | ||     |
      ||  ||  ||  || ||     ||     ||    |  ||    || ||    | ||     |
-      \\,/  \\,/ \\,/   \\___   \\___  ||    |  \\___. ";    \\,_/  ""     |,        
+      \\,/  \\,/ \\,/   \\___   \\___  ||    |  \\___. ";   \\,_/  ""     |,        
        
-\033[0;30m═════════════════════════════════════════════════════════════\033[0m
+\033[0;30m════════════════════════════════════════════════════════════════════\033[0m
 """
 faded_text = fade.fire(logo)
 print(faded_text)
@@ -133,7 +133,7 @@ class SendPOSTThread(threading.Thread):
 # check if the site stop responding and alert
 
 def main(argv):
-	parser = argparse.ArgumentParser(description='Sending unlimited amount of requests in order to perform DoS attacks. by: BaseL7')
+	parser = argparse.ArgumentParser(description='Sending unlimited amount of requests in order to perform DoS attacks. by: TweenLion')
 	parser.add_argument('-g', help='Specify GET request. Usage: -g \'<url>\'')
 	parser.add_argument('-p', help='Specify POST request. Usage: -p \'<url>\'')
 	parser.add_argument('-d', help='Specify data payload for POST request', default=None)
